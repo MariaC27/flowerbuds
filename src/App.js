@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import './App.css';
+import Plant from './components/Plant';
 
 class App extends Component{
   constructor(props){
@@ -11,6 +12,7 @@ class App extends Component{
     <div className="App">
       <header className="App-header">
        <p>FlowerBuds</p>
+       <Garden></Garden>
       </header>
     </div>
   );

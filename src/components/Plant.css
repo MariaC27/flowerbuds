@@ -1,0 +1,21 @@
+.plantStyle {
+    width: 20rem;
+    height: 180px;
+    background-color: rgb(7, 56, 88);
+    border: 2px;
+    border-color: white;
+    margin: 12px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .plantText {
+      text-align: center;
+      margin: 8px;
+      font-size: 16px;
+      color: white;
+  }
+
+  .plantName{
+    color: white;
+}
