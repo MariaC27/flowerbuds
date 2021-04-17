@@ -15,7 +15,6 @@ class Plant extends Component {
   
       return (
         <div className='plantStyle'>
-          
           <p>Plant: {this.props.title}</p>
         </div>
       )

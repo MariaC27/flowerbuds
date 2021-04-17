@@ -56,7 +56,7 @@ class Garden extends Component {
     const posts = this.state.allPlants;
     const allPosts = posts.map((todo) => {
         return (
-          <Plant className="plantPost"
+          <Plant 
             title={todo.title}
             id={todo.id}
           />
@@ -65,17 +65,17 @@ class Garden extends Component {
     );
     return (
       <div>
-        <p className="boardTitle"> Garden</p>
+        <p className="GardenTitle">_____'s Garden</p>
        
-        <p className="boardText">Add something!</p>
+        <p className="GardenText">Add something!</p>
 
         <p>Enter Title:</p>
-        <input className="boardInput" type="text" value={this.state.title} onChange={this.newTitleFunction} />
+        <input className="Input" type="text" value={this.state.title} onChange={this.newTitleFunction} />
 
-        <button className="boardButton" onClick={this.savePlant}>Save Plant</button>
+        <button className="SaveButton" onClick={this.savePlant}>Save Plant</button>
 
         
-          <button className="boardButton" onClick={this.fetchPlants}> Show Plants!</button>
+          <button className="UpdateButton" onClick={this.fetchPlants}> Show Plants!</button>
           <div>
           {allPosts}
           </div>
