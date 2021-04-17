@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import './Plant.css';
 
 class Plant extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ class Plant extends Component {
   
       return (
         <div className='plantStyle'>
-          <p>{this.props.title}</p>
+          
+          <p>Plant: {this.props.title}</p>
         </div>
       )
     }

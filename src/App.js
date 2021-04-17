@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import './App.css';
-import Plant from './components/Plant';
+import Garden from './components/Garden';
 
 class App extends Component{
   constructor(props){

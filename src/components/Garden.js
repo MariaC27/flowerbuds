@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Firebase from '../firestore/index';
+import Firebase from '../firebase/index';
 import Plant from './Plant';
-import './App.css';
+import './Plant.css';
+
 
 class Garden extends Component {
   constructor(props) {
@@ -71,10 +72,10 @@ class Garden extends Component {
         <p>Enter Title:</p>
         <input className="boardInput" type="text" value={this.state.title} onChange={this.newTitleFunction} />
 
-        <button className="boardButton" onClick={this.saveNewToDo}>Save Plant</button>
+        <button className="boardButton" onClick={this.savePlant}>Save Plant</button>
 
         
-          <button className="boardButton" onClick={this.fetchToDos}> Show Plants!</button>
+          <button className="boardButton" onClick={this.fetchPlants}> Show Plants!</button>
           <div>
           {allPosts}
           </div>
