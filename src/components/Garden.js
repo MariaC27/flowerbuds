@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Firebase from '../firebase/index';
 import Plant from './Plant';
 import './Plant.css';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 
 class Garden extends Component {
@@ -51,6 +53,8 @@ class Garden extends Component {
       })
   }
 
+  
+
  
   render() {
     const posts = this.state.allPlants;
@@ -65,17 +69,24 @@ class Garden extends Component {
     );
     return (
       <div>
-        <p className="GardenTitle">_____'s Garden</p>
+        <p className="GardenTitle"> My Garden</p>
        
-        <p className="GardenText">Add something!</p>
+        <p className="GardenText"></p>
 
-        <p>Enter Title:</p>
-        <input className="Input" type="text" value={this.state.title} onChange={this.newTitleFunction} />
+        <input className="Input" type="text" placeholder="Plant New Bud"value={this.state.title} onChange={this.newTitleFunction} />
+
+
+        <DropdownButton id="dropdown-item-button" title={this.state.ButtonDisplay}>
+      <Dropdown.Item as="button" onClick = {()=>this.chooseFlower("1")}>1</Dropdown.Item>
+      <Dropdown.Item as="button" onClick = {()=>this.chooseFlower("2")}>2</Dropdown.Item>
+      <Dropdown.Item as="button" onClick = {()=>this.chooseFlower("3")}>3</Dropdown.Item>
+      
+      </DropdownButton>
 
         <button className="SaveButton" onClick={this.savePlant}>Save Plant</button>
 
-        
           <button className="UpdateButton" onClick={this.fetchPlants}> Show Plants!</button>
+    
           <div>
           {allPosts}
           </div>
