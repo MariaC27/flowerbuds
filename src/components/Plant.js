@@ -23,7 +23,7 @@ class Plant extends Component {
 
     
     render() {
-      if(this.plantType==0){
+      if(this.plantType=0){
         return (
           <div className='plantType'>
             <p>Plant: {this.props.title}</p>
@@ -32,7 +32,7 @@ class Plant extends Component {
           </div>
         )
       }
-      else if(this.plantType==1){
+      else if(this.plantType=1){
         return (
           <div className='plantType'>
             <p>Plant: {this.props.title}</p>
